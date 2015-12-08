@@ -19,8 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'rking/ag.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'rking/ag.vim'
 
 call vundle#end()									" required
 filetype plugin indent on							" required
@@ -31,7 +30,7 @@ filetype plugin indent on							" required
 :let g:ctrlp_match_window = 'bottom,order:ttb'
 :let g:ctrlp_switch_buffer = 0
 :let g:ctrlp_working_path_mode = 0
-:let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+":let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " vim-airline settings
 :let g:airline#extensions#tabline#enabled = 1		" enable tab extension
@@ -65,6 +64,7 @@ nnoremap <leader>a :Ag
 " ==========FOLDING==========
 
 :set foldenable										" enable folding
+:set foldlevelstart=10								" open most folds by default
 "space open/close folds
 :nnoremap <space> za
 :set foldmethod=indent								" fold based on indent level
