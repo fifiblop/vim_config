@@ -19,9 +19,25 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'rking/ag.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()									" required
 filetype plugin indent on							" required
+
+" ==========PLUGIN SETTINGS==========
+
+" CtrlP settings
+:let g:ctrlp_match_window = 'bottom,order:ttb'
+:let g:ctrlp_switch_buffer = 0
+:let g:ctrlp_working_path_mode = 0
+:let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+" vim-airline settings
+:let g:airline#extensions#tabline#enabled = 1		" enable tab extension
+
+" ag.vim settings									" open ag.vim
+nnoremap <leader>a :Ag
                                                                           
 " ==========COLORS==========
 
@@ -38,7 +54,6 @@ filetype plugin indent on							" required
 :set cursorline										" highlight current line
 :set wildmenu										" visual auto complete for command menu
 :set showmatch										" highlight matching [({})]
-:let g:airline#extensions#tabline#enabled = 1		" enable tab extension
 
 " ==========SEARCHING==========
 
