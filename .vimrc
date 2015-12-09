@@ -74,6 +74,7 @@ let g:neocomplcache_enable_at_startup = 1
 :inoremap [ []<left>
 :inoremap " ""<left>
 :inoremap ' ''<left>
+:inoremap < <><left>
 
 " ==========SEARCHING==========
 
