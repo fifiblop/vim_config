@@ -65,6 +65,7 @@ let g:neocomplcache_enable_at_startup = 1
 " ==========UI CONFIG==========
 
 :set number											" show line numbers
+:set cc=80
 :set cursorline										" highlight current line
 :set wildmenu										" visual auto complete for command menu
 :set showmatch										" highlight matching [({})]
