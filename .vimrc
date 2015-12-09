@@ -62,12 +62,17 @@ let g:neocomplcache_enable_at_startup = 1
 :set tabstop=4										" number of visual spaces per TAB
 :set softtabstop=4									" number of spaces in tab when editing
 
-" UI CONFIG
+" ==========UI CONFIG==========
 
 :set number											" show line numbers
 :set cursorline										" highlight current line
 :set wildmenu										" visual auto complete for command menu
 :set showmatch										" highlight matching [({})]
+:inoremap ( ()<left>
+:inoremap { {}<left>
+:inoremap [ []<left>
+:inoremap " ""<left>
+:inoremap ' ''<left>
 
 " ==========SEARCHING==========
 
