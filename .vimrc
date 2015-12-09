@@ -19,7 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
-"Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()									" required
 filetype plugin indent on							" required
@@ -30,14 +30,22 @@ filetype plugin indent on							" required
 :let g:ctrlp_match_window = 'bottom,order:ttb'
 :let g:ctrlp_switch_buffer = 0
 :let g:ctrlp_working_path_mode = 0
-":let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+" switch to previous tab
+:nnoremap <F5> :bp<CR>
+" switch to next tab
+:nnoremap <F6> :bn<CR>
+" close the current tab
+:nnoremap <F7> :bd<CR>
 
 " vim-airline settings
 :let g:airline#extensions#tabline#enabled = 1		" enable tab extension
 
-" ag.vim settings									" open ag.vim
-nnoremap <leader>a :Ag
-                                                                          
+" NerdTree settings
+" Open NerdTree
+:nnoremap <F2> :NERDTree<CR>
+" Close NerdTree
+:nnoremap <F3> :NERDTreeClose<CR>
+
 " ==========COLORS==========
 
 :syntax enable										" enable syntax processing
@@ -59,7 +67,7 @@ nnoremap <leader>a :Ag
 :set incsearch										" search as characters are entered
 :set hlsearch										" highlight matches
 "turn of search highlight
-:nnoremap <leader><space> :nolhsearch<CR>
+:nnoremap <leader><space> :nohlsearch<CR>
 
 " ==========FOLDING==========
 
