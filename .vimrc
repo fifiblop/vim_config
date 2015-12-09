@@ -20,6 +20,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()									" required
 filetype plugin indent on							" required
@@ -45,6 +49,9 @@ filetype plugin indent on							" required
 :nnoremap <F2> :NERDTree<CR>
 " Close NerdTree
 :nnoremap <F3> :NERDTreeClose<CR>
+
+" Neocomplcache settings
+let g:neocomplcache_enable_at_startup = 1
 
 " ==========COLORS==========
 
