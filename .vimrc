@@ -34,11 +34,11 @@ filetype plugin indent on							" required
 :let g:ctrlp_switch_buffer = 0
 :let g:ctrlp_working_path_mode = 0
 " switch to previous tab
-:nnoremap <F5> :bp<CR>
+:nnoremap <C-z> :bp<CR>
 " switch to next tab
-:nnoremap <F6> :bn<CR>
+:nnoremap <C-x> :bn<CR>
 " close the current tab
-:nnoremap <F7> :bd<CR>
+:nnoremap <C-c> :bd<CR>
 
 " vim-airline settings
 :let g:airline#extensions#tabline#enabled = 1		" enable tab extension
