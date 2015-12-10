@@ -22,7 +22,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()									" required
