@@ -21,8 +21,9 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Raimondi/delimitMate'
+Plugin 'oblitum/rainbow'
 
 call vundle#end()									" required
 filetype plugin indent on							" required
@@ -52,8 +53,12 @@ filetype plugin indent on							" required
 " Neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
 
+" Rainbow
+let g:rainbow_active = 1
+
 " ==========COLORS==========
 
+:colorscheme Tomorrow-Night-Eighties
 :syntax enable										" enable syntax processing
 
 " ==========SPACES & TABS==========
@@ -67,13 +72,12 @@ let g:neocomplcache_enable_at_startup = 1
 :set cc=80
 :set cursorline										" highlight current line
 :set wildmenu										" visual auto complete for command menu
-:set showmatch										" highlight matching [({})]
-:inoremap ( ()<left>
-:inoremap { {}<left>
-:inoremap [ []<left>
-:inoremap " ""<left>
-:inoremap ' ''<left>
-:inoremap < <><left>
+"set showmatch										" highlight matching [({})]
+"inoremap ( ()<left>
+"inoremap { {}<left>
+"inoremap [ []<left>
+"inoremap " ""<left>
+"inoremap ' ''<left>
 
 " ==========SEARCHING==========
 
