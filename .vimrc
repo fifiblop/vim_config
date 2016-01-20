@@ -72,12 +72,8 @@ let g:rainbow_active = 1
 :set cc=80
 :set cursorline										" highlight current line
 :set wildmenu										" visual auto complete for command menu
-"set showmatch										" highlight matching [({})]
-"inoremap ( ()<left>
-"inoremap { {}<left>
-"inoremap [ []<left>
-"inoremap " ""<left>
-"inoremap ' ''<left>
+" place cursor between brackets
+:imap {<cr> {<cr>}<c-o>O
 
 " ==========SEARCHING==========
 
